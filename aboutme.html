@@ -18,6 +18,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #height {
 	float: right;
@@ -34,15 +35,89 @@
 	height: 50px;
 	width: 1280px;
 }
+.form1{
+	border-radius:5;
+	font-size:24px;
+	margin-top:30px;
+	margin-left:50px;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/t04.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">基本資料</li>
+        <li class="TabbedPanelsTab" tabindex="0">設計理念</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習反思</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">
+          <table width="915" height="606" border="1">
+            <tr>
+              <td width="449" rowspan="4" align="center"><img src="images/IMG_2523.jpg" width="300" height="400" /></td>
+              <td width="450" height="54" align="center">個人資料</td>
+            </tr>
+            <tr>
+              <td height="217"><p>姓名：林靖祐 <br />
+                性別：男 <br />
+                就讀學校：國立華南高商 <br />
+                科別：資料處理 <br />
+                電話：0905----072 <br />
+              E-Mail：11318019@gm.hnvs.cy.edu.tw </p></td>
+            </tr>
+            <tr>
+              <td height="63" align="center">經歷</td>
+            </tr>
+            <tr>
+              <td height="260"><p>高二</p>
+              <p>衛生股長</p>
+              <p>數學小老師</p></td>
+            </tr>
+          </table>
+        </div>
+        <div class="TabbedPanelsContent">
+          <table width="967" height="354" border="1">
+            <tr>
+              <td height="78" align="center"><strong>理念</strong></td>
+            </tr>
+            <tr>
+              <td><strong>本次以嘉義縣中埔穀倉農創園區作為設計主題，希望透過園區的歷史文化與農業特色，展現地方創生的精神。中埔穀倉原本是保存糧食的重要場所，承載著早期農業發展的記憶，因此設計上以穀倉建築輪廓為主要元素，結合稻穗、農田及自然景觀，象徵豐收與永續發展。在色彩運用方面，以大地色系及綠色為主，代表土地的生命力與農業資源，同時營造溫暖、親近自然的感受。透過現代化的設計手法，將傳統穀倉文化重新詮釋，展現園區融合文化保存、農業創新與觀光休閒的特色。期望藉由本設計，讓更多人認識中埔穀倉農創園區的價值，並感受嘉義在地文化與農業發展的魅力。</strong></td>
+            </tr>
+          </table>
+        </div>
+        <div class="TabbedPanelsContent">
+          <table width="985" height="597" border="1">
+            <tr>
+              <td height="48" align="center"><strong>這學期學了那些技能？</strong></td>
+            </tr>
+            <tr>
+              <td height="134" align="center"><strong>學了如何應用Github、photoshop這兩個程式</strong></td>
+            </tr>
+            <tr>
+              <td height="46" align="center"><strong>學習過程中遭遇的困難及解決方式？</strong></td>
+            </tr>
+            <tr>
+              <td height="132" align="center"><strong>版面一直跑掉，有些功能不會用.</strong></td>
+            </tr>
+            <tr>
+              <td height="51" align="center"><strong>獲得哪些能力？</strong></td>
+            </tr>
+            <tr>
+              <td height="170" align="center"><strong>如何架設網站</strong></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="item">  <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">景物</a>      </li>
       <li><a href="foot.html">食物</a></li>
@@ -56,6 +131,7 @@
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 </script>
 </body>
 </html>
